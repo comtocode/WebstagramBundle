@@ -1,0 +1,4 @@
+services:
+#    ctc_webstagram.example:
+#        class: CTC\WebstagramBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
