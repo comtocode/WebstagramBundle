@@ -1,0 +1,10 @@
+parameters:
+    # Define prefix uri - Suffix is ID
+    webstagram.urlPrefix: 'https://web.stagram.com/rss/n/'
+    # Your default ID
+    webstagram.defaultID: 'comtocode'
+
+    # Prefix URI when users click on image (default : https://web.stagram.com/p/)
+    webstagram.front.urlPrefix: 'https://www.instagram.com/p/'
+    # Max number of item on front office (Min value : 1 - Max value = 12 )
+    webstagram.front.maxItem: 6

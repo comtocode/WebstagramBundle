@@ -1,0 +1,35 @@
+
+{% if feed is defined %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <h2 class="h2">
+                    <img src="https://www.instagram.com/static/images/ico/apple-touch-icon-76x76-precomposed.png/932e4d9af891.png" width="20" />
+                    Instagram <strong>@{{ name }}</strong>
+                </h2>
+                {% if description is not null %}
+                    <p class="description">
+                        {{ description }}
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="row">
+
+            {% for key, item in feed %}
+
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 margin-top">
+                    <a href="{{ item.url }}" target="_blank" class="img-webstagram">
+                        <img src="{{ item.imageUrl }}" alt="{{ item.title }}" class="img-rounded img-responsive"  />
+                    </a>
+                </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+
+{% endif %}
+

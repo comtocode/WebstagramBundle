@@ -1,0 +1,3 @@
+ctc_webstagram_homepage:
+    path:     /
+    defaults: { _controller: CTCWebstagramBundle:Default:index }
