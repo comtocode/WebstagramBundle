@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This bundle allows you to download instagram RSS feed with webstagram and display element on your twig template.
+This bundle allows you to download instagram RSS feed with webstagram and displaying items on your twig template.
 
 ## Configuration
 
@@ -23,7 +23,7 @@ webstagram.front.urlPrefix: 'https://www.instagram.com/p/'
 ```
 
 ```
-# Max number of item on front office (Min value : 1 - Max value = 12 )
+# Max item number on front office (Min value : 1 - Max value = 12 )
 webstagram.front.maxItem: 6
 ```
 
@@ -37,12 +37,12 @@ php app/console ctc:webstagram
 
 ### Option
 
-``--id='YourInstagramID'`` : The ID of instagram  (example : `comtocode`)
+``--id='YourInstagramID'`` : Your instagram ID  (example : `comtocode`)
 
 
 ## Display
 
-Insert on your twig file this render controller : 
+Insert in your twig file this render controller : 
 
 ```twig
 
@@ -67,7 +67,7 @@ You can change instagram ID (name) to avoid default ID is used
 
 #### Add description
 
-You need a description beside your title ? No problem !
+You need a description below your title ? No problem !
 
 ```twig
 {{  render_esi(controller(
@@ -80,7 +80,7 @@ You need a description beside your title ? No problem !
 
 #### Max Item (max 12)
 
-You can define the number of item you need
+You can define the number of item you need on front office :
 
 ```twig
 {{  render_esi(controller(
@@ -94,7 +94,7 @@ You can define the number of item you need
 
 ### Override default template
 
-Finaly, you need a specific template or use your own, you can do it ! (but we suggest to refering by our template)
+Finally, you need a specific template or uses your own, you can do it ! (but we suggest you to referring by our template) :
 
 ```twig
 {{  render_esi(controller(
